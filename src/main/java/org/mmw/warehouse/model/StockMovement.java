@@ -31,7 +31,10 @@ public class StockMovement
         this.product = product;
         this.supplier = supplier;
         this.type = type;
-
+        setQuantity(quantity);
+        setUnitPrice(unitPrice);
+        this.createdAt = createdAt;
+        this.comment = comment;
     }
 
     /** Total value of this movement: unit price * quantity. */
